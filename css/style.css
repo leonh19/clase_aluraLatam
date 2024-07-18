@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-primario: #26355D;
+  --color-secundario: #AF47D2;
+  --color-terciario: #FF8F00;
+  --color-hover: #272727;
+
+  --fuente-montserrat: "Montserrat", sans-serif;
+  --fuente-Krona: "Krona One", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  box-sizing: border-box;
+}
+
+header {
+  padding: 2% 0% 0% 15%;
+}
+
+.Menu {
+  display: flex;
+  gap: 80px;
+}
+
+.menu_link {
+  color: var(--color-terciario);
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem; /* 1 rem = 16 pixeles*/
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.titulo1 {
+  color: var(--color-terciario);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6% 15%;
+  gap: 82px;
+}
+
+.presentacion {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.presentacion_titulo {
+  font-size: 2.25rem;
+  font-family: var(--fuente-Krona);
+}
+
+.parrafo {
+  font-size: 1.5rem;
+  font-family: var(--fuente-montserrat);
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.titulo2 {
+  font-size: 1.5rem;
+  font-family: var(--fuente-Krona);
+  font-weight: 400;
+}
+
+.anclas {
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  width: 50%;
+  text-align: center;
+  padding: 21.5px 0px;
+  border-radius: 8px;
+  border: 2px solid var(--color-terciario);
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex; /* Para alinear ícono y texto */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  gap: 10px; /* Espacio entre ícono y texto */
+}
+
+.anclas:hover {
+  background-color: var(--color-hover);
+}
+
+i {
+  color: var(--color-terciario);
+}
+
+.imagen {
+  width: 50%;
+}
+
+.piePagina {
+  display: flex;
+  background-color: var(--color-terciario);
+  color: var(--color-primario);
+  padding: 24px;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+
+  .Header {
+    padding: 10%;
+  }
+
+  .Menu {
+    justify-content: center;
+  }
+  .container {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .presentacion {
+    width: auto;
+  }
+}
